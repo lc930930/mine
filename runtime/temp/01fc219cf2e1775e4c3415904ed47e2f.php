@@ -1,0 +1,54 @@
+<?php /*a:1:{s:69:"E:\phpstudy_pro\WWW\think5\application\index\view\login\register.html";i:1596779899;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="/static/register/css/register.css">
+</head>
+<body class="login-box">
+    <main>
+        <div class="login-left">
+            <img src="" alt="">
+        </div>
+        <form action="<?php echo url('login/doregister'); ?>" method="post">
+            <div class="login-right">
+                <div class="login-top">
+                    hello,
+                    <div>欢迎注册</div>
+                </div>
+                <div class="login-username">
+                    <input type="text" placeholder="请输入您的账号" id="username" name="username">
+                </div>
+                <div class="login-pwd1">
+                    <input type="password" placeholder="请输入您的密码,不少于6位数" id="pwd1" name="pwd1">
+                </div>
+                <div class="login-pwd2">
+                    <input type="password" placeholder="请再次输入您的密码" id="pwd2" name="pwd2">
+                </div>
+                <input class="login-btn-register" id="login-btn-register" type="submit" value="立即注册">
+                <div class="login-bottom">
+                    <span style="color: #7e8795">已经有账号？</span>
+                    <a href="login.html" class="login-btn-login">马上登录</a>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+<!--<script src="/static/js/jquery.js"></script>-->
+<!--<script>-->
+    <!--$('#login-btn-register').click(function(){-->
+        <!--var user = $('#username').val();-->
+        <!--var pwd1 = $('#pwd1').val();-->
+        <!--var pwd2 = $('#pwd2').val();-->
+        <!--if(user == "" || pwd1 == "" || pwd2 == ""){-->
+            <!--alert('请填写完登录表单');-->
+            <!--return;-->
+        <!--}-->
+        <!--if(pwd1 != pwd2){-->
+            <!--alert('两次密码输入不一样，请重新输入');-->
+            <!--return;-->
+        <!--}-->
+    <!--});-->
+<!--</script>-->
+</html>
