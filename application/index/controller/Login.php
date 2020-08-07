@@ -66,7 +66,6 @@ class Login extends Controller{
         $pwd1 = $this->request->post('pwd1');
         $pwd2 = $this->request->post('pwd2');
         $loginInfo = Db::table('think_user')->column('username');
-        //sfjklasjfkj
         $rule = [
             '用户名'          => 'require|length:3,30',
             '密码'            => 'require|length:3,30',
